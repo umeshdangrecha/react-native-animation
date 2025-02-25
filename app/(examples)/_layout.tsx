@@ -5,7 +5,10 @@ import { Stack } from "expo-router";
 const ExampleLayout = () => {
   return (
     <Stack>
-      <Stack.Screen name="onboarding-animation" />
+      <Stack.Screen
+        name="onboarding-animation"
+        options={{ title: "Onboarding Animation" }}
+      />
     </Stack>
   );
 };

@@ -31,6 +31,12 @@ export default function RootLayout() {
             headerTitle: "Animation Examples",
           }}
         />
+        <Stack.Screen
+          name="(examples)"
+          options={{
+            headerShown: false,
+          }}
+        />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
