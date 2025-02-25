@@ -20,12 +20,6 @@ import Animated, {
   withSpring,
 } from "react-native-reanimated";
 
-interface OnboardingAnimationComponentProps {
-  total: number;
-  activeIndex: number;
-  onIndexChange: (newIndex: number) => void;
-}
-
 const _spacing = 8;
 const _buttonHeight = 42;
 const _layoutTransition = LinearTransition.springify()
@@ -156,9 +150,11 @@ export function Pagination({
     </View>
   );
 }
-const OnboardingAnimationComponent = (
-  props: OnboardingAnimationComponentProps
-) => {
+const OnboardingAnimationComponent = (props: {
+  total: number;
+  activeIndex: number;
+  onIndexChange: (newIndex: number) => void;
+}) => {
   const { activeIndex, onIndexChange, total } = props;
 
   const isAtLastIndex = useMemo(

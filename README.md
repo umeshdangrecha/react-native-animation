@@ -2,4 +2,4 @@
 
 ## List Of Animations
 
-[Onboarding/Pagination Animation](components/OnboardingAnimation/README.md)
+- [Onboarding/Pagination Animation](components/OnboardingAnimation/README.md)
