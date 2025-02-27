@@ -13,6 +13,18 @@ const ExampleLayout = () => {
         name="counter-animation"
         options={{ title: "Counter Animation" }}
       />
+      <Stack.Screen
+        name="loading-animation"
+        options={{ title: "Loading Animation" }}
+      />
+      <Stack.Screen
+        name="ring-indicator"
+        options={{ title: "Ring Indicator" }}
+      />
+      <Stack.Screen
+        name="wall-paper-carousel"
+        options={{ title: "WallPaper Carousel" }}
+      />
     </Stack>
   );
 };

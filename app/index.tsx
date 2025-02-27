@@ -6,13 +6,28 @@ import { FlatList, StyleSheet, Text, View } from "react-native";
 const buttons: { key: string; path: Href; label: string }[] = [
   {
     key: "onboarding-animation",
-    path: "/(examples)/onboarding-animation",
+    path: "/onboarding-animation",
     label: "1. Onboarding Animation",
   },
   {
     key: "counter-animation",
-    path: "/(examples)/counter-animation",
+    path: "/counter-animation",
     label: "2. Counter Animation",
+  },
+  {
+    key: "loading-animation",
+    path: "/loading-animation",
+    label: "3. Loading Animation",
+  },
+  {
+    key: "ring-indicator",
+    path: "/ring-indicator",
+    label: "4. Ring Indicator",
+  },
+  {
+    key: "wall-paper-carousel",
+    label: "WallPaper Carousel",
+    path: "/wall-paper-carousel",
   },
 ];
 
