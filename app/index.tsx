@@ -1,19 +1,41 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
-import React from "react";
-import { Link, router } from "expo-router";
 import { AnimatedButton } from "@/components/AnimatedPressable/AnimatedPressable";
+import { Href, router } from "expo-router";
+import React from "react";
+import { FlatList, StyleSheet, Text, View } from "react-native";
+
+const buttons: { key: string; path: Href; label: string }[] = [
+  {
+    key: "onboarding-animation",
+    path: "/(examples)/onboarding-animation",
+    label: "1. Onboarding Animation",
+  },
+  {
+    key: "counter-animation",
+    path: "/(examples)/counter-animation",
+    label: "2. Counter Animation",
+  },
+];
 
 const RootScreen = () => {
   return (
     <View style={styles.container}>
-      <AnimatedButton
-        onPress={() => {
-          router.navigate("/(examples)/onboarding-animation");
+      <FlatList
+        showsVerticalScrollIndicator={false}
+        style={{ flex: 1 }}
+        data={buttons}
+        renderItem={({ item }) => {
+          return (
+            <AnimatedButton
+              onPress={() => {
+                router.navigate(item.path);
+              }}
+              style={styles.button}
+            >
+              <Text style={styles.buttonText}>{item.label}</Text>
+            </AnimatedButton>
+          );
         }}
-        style={styles.button}
-      >
-        <Text style={styles.buttonText}>1. Onboarding Animation</Text>
-      </AnimatedButton>
+      />
     </View>
   );
 };

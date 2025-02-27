@@ -9,6 +9,10 @@ const ExampleLayout = () => {
         name="onboarding-animation"
         options={{ title: "Onboarding Animation" }}
       />
+      <Stack.Screen
+        name="counter-animation"
+        options={{ title: "Counter Animation" }}
+      />
     </Stack>
   );
 };
