@@ -25,6 +25,11 @@ const ExampleLayout = () => {
         name="wall-paper-carousel"
         options={{ title: "WallPaper Carousel" }}
       />
+      <Stack.Screen
+        name="tabs"
+        options={{ title: "Tabs", headerShown: false }}
+      />
+      <Stack.Screen name="loaders" options={{ title: "Loaders" }} />
     </Stack>
   );
 };

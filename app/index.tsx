@@ -29,6 +29,16 @@ const buttons: { key: string; path: Href; label: string }[] = [
     label: "WallPaper Carousel",
     path: "/wall-paper-carousel",
   },
+  {
+    key: "tabs",
+    label: "Tabs",
+    path: "/tabs",
+  },
+  {
+    key: "loaders",
+    label: "Loaders",
+    path: "/loaders",
+  },
 ];
 
 const RootScreen = () => {
